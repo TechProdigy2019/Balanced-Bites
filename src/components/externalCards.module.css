@@ -1,0 +1,18 @@
+.mainCard {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid #a7a7a7;
+    position: fixed;
+    bottom: 1rem;
+    width: 95%;
+    margin: auto;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    padding: 0.7rem;
+}
+
+.mainCard strong {
+    font-size: 1.2rem;
+}

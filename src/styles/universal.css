@@ -1,0 +1,210 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.custom-navbar {
+    margin: 1rem auto;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    margin: auto 0.5rem;
+    font-weight: 600;
+    color: #666666;
+    font-size: 1rem;
+    transition: all 0.4s;
+    padding: 0.8rem 1.2rem;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.4s;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #00a17b;
+    border-color: #00a17b;
+}
+
+.btn-primary:hover {
+    background-color: #00775b;
+    border-color: #00775b;
+}
+
+.btn-secondary {
+    background-color: #a6a6a6;
+    border-color: #a6a6a6;
+}
+
+.btn-secondary:hover {
+    background-color: #868686;
+    border-color: #868686;
+}
+
+.btn {
+    border-radius: 0.45rem;
+}
+
+.dot-menu {
+    position: relative;
+}
+
+.dot-menu__label:before,
+.dot-menu__label:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #3d3d23;
+    transition: 0.8s;
+    left: 25px;
+    transition: 0.2s;
+}
+
+.dot-menu__label:after {
+    top: 38px;
+}
+
+.dot-menu__label:before {
+    top: 12px;
+}
+
+.dot-menu__checkbox:checked ~ .dot-menu__label:before,
+.dot-menu__checkbox:checked ~ .dot-menu__label span:before,
+.dot-menu__checkbox:checked ~ .dot-menu__label:after {
+    background-color: #000000;
+    top: 25px;
+}
+.dot-menu__checkbox:checked ~ .dot-menu__label span:before {
+    width: 30px;
+    left: 15px;
+}
+
+.dot-menu__label {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-indent: -9999em;
+    position: relative;
+    z-index: 3;
+}
+.dot-menu__label span:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #3d3d23;
+    transition: 0.8s;
+    left: 25px;
+    top: 25px;
+}
+
+header nav {
+    background-color: rgb(253, 253, 253);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 25%;
+    top: 170px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+header nav ul li {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+header nav ul li a {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: rgb(31, 31, 31);
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(199, 199, 199, 0.5);
+}
+
+header nav ul li a:hover {
+    color: #000000;
+}
+
+.dot-menu__checkbox:checked ~ nav {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dot-menu__checkbox:checked ~ nav ul li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.dot-menu__checkbox:checked ~ nav ul li:nth-child(1) {
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.dot-menu__checkbox:checked ~ nav ul li:nth-child(2) {
+    transition: all 0.3s ease-out 0.3s;
+}
+
+.dot-menu__checkbox:checked ~ nav ul li:nth-child(3) {
+    transition: all 0.3s ease-out 0.4s;
+}
+
+.dot-menu__checkbox:checked ~ nav ul li:nth-child(4) {
+    transition: all 0.3s ease-out 0.5s;
+}
+
+.dot-menu__checkbox:checked + label.toggle-btn .bar {
+    background-color: red;
+}
+
+.dot-menu__checkbox:checked + label.toggle-btn .bar:nth-child(2) {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.dot-menu__checkbox:checked + label.toggle-btn .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.dot-menu__checkbox:checked + label.toggle-btn .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-brand {
+    position: relative;
+    z-index: 3;
+}
