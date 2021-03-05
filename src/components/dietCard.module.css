@@ -1,0 +1,33 @@
+.mainCard {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #ececec;
+    margin: 0rem auto 1rem;
+}
+
+.mainCard h5 {
+    font-family: "Raleway", sans-serif;
+    color: #555555;
+}
+
+.mainCard p {
+    font-size: 0.9rem;
+}
+
+.icon {
+    padding: 1rem;
+    border-radius: 200rem;
+    background-color: #ffffff;
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .mainCard {
+        display: inline-block;
+    }
+
+    .mainCard p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

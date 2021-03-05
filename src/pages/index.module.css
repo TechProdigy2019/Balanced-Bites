@@ -19,12 +19,25 @@
     font-size: 1.1rem;
 }
 
+.section2 .sectionBox {
+    min-height: fit-content;
+    padding: 3rem 1.2rem 6rem 1.2rem;
+}
+
 .DietWomen {
     position: absolute;
     width: 44%;
     right: -2rem;
     bottom: -4rem;
     max-height: calc(100vh - 7rem);
+}
+
+.aboutMe {
+    width: 13rem;
+    border-radius: 1.5rem;
+    position: relative;
+    right: 1.5rem;
+    top: -3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -34,5 +47,18 @@
 
     .secImg1 {
         width: 60%;
+    }
+
+    .section2 .sectionBox {
+        min-height: calc(100vh - 8.5rem);
+        padding: 4rem 4rem 3rem 8rem;
+    }
+
+    .aboutMe {
+        width: 18rem;
+        border-radius: 1.5rem;
+        position: relative;
+        right: 1.5rem;
+        top: 3rem;
     }
 }

@@ -9,6 +9,9 @@ import Button from "react-bootstrap/Button"
 import Diet1 from "../images/Group.svg"
 import FixedToast from "../components/fixedToast"
 import DietWomen from "../images/diet_women.svg"
+import aboutMe from "../images/aboutme_1.png"
+import DietCard from "../components/dietCard"
+import WeightGainImg from "../images/diet_icons/Weight Loss (2).png"
 
 export default function Home() {
     return (
@@ -22,7 +25,7 @@ export default function Home() {
                     Download
                 </Button>
             </FixedToast>
-            <section className="section-1">
+            <section className="section1">
                 <Container>
                     <div className={style.sectionBox}>
                         <Row style={{ minHeight: "calc(100vh - 8.5rem)" }}>
@@ -80,6 +83,95 @@ export default function Home() {
                             </Col>
                         </Row>
                     </div>
+                </Container>
+            </section>
+            <section className={style.section2}>
+                <Container>
+                    <Row>
+                        <Col xs={12} md={10} className="order-md-1">
+                            <div className={style.sectionBox}>
+                                <h2 className="mb-5">Dt. Gauri Anand</h2>
+                                <p>
+                                    Dt. Gauri Anand is a Clinical Nutritionist
+                                    with a masters degree in food and nutrition.
+                                    She is working as a diabetic educator,
+                                    specialising in Diabetes Mellitus.{" "}
+                                </p>
+                                <p>
+                                    Her main goal is to change the people’s
+                                    lifestyle into a fit and healthy one. She
+                                    looks forward to inspire people for stepping
+                                    into a healthy routine.{" "}
+                                </p>
+                            </div>
+                        </Col>
+                        <Col xs={12} md={2} className="text-right order-md-0">
+                            <img
+                                src={aboutMe}
+                                alt=""
+                                className={style.aboutMe}
+                            />
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section className={style.section3}>
+                <Container>
+                    <Row>
+                        <Col xs={12} md={2}>
+                            <h2 className="mb-4 mb-md-5">
+                                Diet Plans
+                                <br />
+                                <span style={{ color: "#008465" }}>
+                                    We Offer
+                                </span>
+                                <br />
+                            </h2>
+                            <p>
+                                Eat without worying as our diet plans our
+                                customised to your condition
+                            </p>
+                        </Col>
+                        <Col xs={12} md={10} className="my-5 my-md-0">
+                            <div className={style.dietCardOuter}>
+                                <DietCard
+                                    heading="Weight Lost"
+                                    text="Our custom weight lost programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                                <DietCard
+                                    heading="Weight Gain"
+                                    text="Our custom weight gain programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                                <DietCard
+                                    heading="PCOD/PCOS"
+                                    text="Our custom weight lost programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                                <DietCard
+                                    heading="Diabetes Mellitus"
+                                    text="Our custom weight lost programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                                <DietCard
+                                    heading="Pregnancy / Lactation"
+                                    text="Our custom weight lost programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                                <DietCard
+                                    heading="Diet For Constipation"
+                                    text="Our custom weight lost programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                                <DietCard
+                                    heading="Diet for Cholestrol / Blood Pressure manangment"
+                                    text="Our custom weight lost programs can help you reach your goal fast"
+                                    icon={WeightGainImg}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </section>
         </Layout>

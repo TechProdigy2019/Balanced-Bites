@@ -16,6 +16,10 @@ a:hover {
     text-decoration: none;
 }
 
+section {
+    margin-bottom: 8rem;
+}
+
 .custom-navbar {
     margin: 1rem auto;
 }
