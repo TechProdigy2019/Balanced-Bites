@@ -3,7 +3,13 @@
     border-radius: 2rem;
     position: relative;
     padding: 0rem 1.2rem;
-    min-height: calc(100vh - 8.5rem);
+    min-height: calc(92vh - 8.5rem);
+    max-height: 60rem;
+}
+
+.sectionBoxRow {
+    min-height: calc(92vh - 8.5rem);
+    max-height: 60rem;
 }
 
 .sectionBox h1 {
@@ -51,6 +57,18 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .sectionBox {
+        min-height: fit-content;
+        height: calc(92vh - 8.5rem);
+        max-height: 35rem;
+    }
+
+    .sectionBoxRow {
+        min-height: fit-content;
+        height: calc(92vh - 8.5rem);
+        max-height: 35rem;
+    }
+
     .sectionBox {
         padding: 0rem 3rem;
     }

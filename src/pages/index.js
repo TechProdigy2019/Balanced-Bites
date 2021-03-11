@@ -29,7 +29,7 @@ export default function Home() {
             <section className="section1">
                 <Container>
                     <div className={style.sectionBox}>
-                        <Row style={{ minHeight: "calc(100vh - 8.5rem)" }}>
+                        <Row className={style.sectionBoxRow}>
                             <Col xs={12} md={6}>
                                 <div>
                                     <h1 className="my-5">
