@@ -61,6 +61,7 @@
         min-height: fit-content;
         height: calc(92vh - 8.5rem);
         max-height: 35rem;
+        padding: 0rem 3rem;
     }
 
     .sectionBoxRow {
@@ -69,16 +70,14 @@
         max-height: 35rem;
     }
 
-    .sectionBox {
-        padding: 0rem 3rem;
-    }
-
     .secImg1 {
         width: 60%;
     }
 
     .section2 .sectionBox {
-        min-height: calc(100vh - 8.5rem);
+        min-height: fit-content;
+        height: calc(100vh - 8.5rem);
+        max-height: 30rem;
         padding: 4rem 4rem 3rem 8rem;
     }
 
@@ -98,5 +97,26 @@
         display: block;
         padding-left: 0rem;
         padding-right: 0rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 530px) {
+    .sectionBox {
+        min-height: fit-content;
+        height: fit-content;
+    }
+
+    .sectionBoxRow {
+        min-height: fit-content;
+        height: fit-content;
+    }
+
+    .section2 .sectionBox {
+        min-height: fit-content;
+        height: fit-content;
+    }
+
+    .section2 img {
+        width: 12rem;
     }
 }

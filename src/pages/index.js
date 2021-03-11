@@ -46,7 +46,7 @@ export default function Home() {
                                         <b>diabetes</b>, <b>hypertension</b> or
                                         any other <b>medical problem</b>.
                                     </p>
-                                    <ButtonToolbar className="justify-content-center justify-content-md-start">
+                                    <ButtonToolbar className="justify-content-center justify-content-md-start mb-0 mb-md-5">
                                         <Button
                                             variant="primary"
                                             className="mr-5 mr-md-3"
