@@ -40,6 +40,16 @@
     top: -3rem;
 }
 
+.dietCardOuter {
+    overflow-x: scroll;
+}
+
+.dietCardInner {
+    display: inline-flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
 @media only screen and (min-width: 768px) {
     .sectionBox {
         padding: 0rem 3rem;
@@ -60,5 +70,15 @@
         position: relative;
         right: 1.5rem;
         top: 3rem;
+    }
+
+    .dietCardOuter {
+        overflow: auto;
+    }
+
+    .dietCardInner {
+        display: block;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }

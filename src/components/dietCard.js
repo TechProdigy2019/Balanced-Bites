@@ -4,7 +4,10 @@ import Media from "react-bootstrap/Media"
 
 export default function DietCard(props) {
     return (
-        <div className={style.mainCard}>
+        <div
+            className={style.mainCard}
+            style={{ width: props.cardWidth, height: props.cardHeight }}
+        >
             <Media>
                 <div className={style.icon}>
                     <img src={props.icon} alt="" />

@@ -1,13 +1,19 @@
-.mainCard {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    background-color: #ececec;
-    margin: 0rem auto 1rem;
+@media only screen and (max-width: 768px) {
+    .mainCard {
+        padding: 0.8rem;
+        border-radius: 1.5rem;
+        background-color: #ececec;
+        margin: 0rem 0.5rem 2rem 0.5rem;
+        height: fit-content;
+        width: 85vw !important;
+        max-width: 25rem;
+    }
 }
 
 .mainCard h5 {
     font-family: "Raleway", sans-serif;
     color: #555555;
+    margin-top: 0.3rem;
 }
 
 .mainCard p {
@@ -23,7 +29,13 @@
 
 @media only screen and (min-width: 768px) {
     .mainCard {
+        padding: 0.8rem;
+        border-radius: 1.5rem;
+        background-color: #ececec;
         display: inline-block;
+        margin: 0rem 1rem 2rem 1rem;
+        height: 10rem;
+        width: 17rem;
     }
 
     .mainCard p {

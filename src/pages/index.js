@@ -12,6 +12,7 @@ import DietWomen from "../images/diet_women.svg"
 import aboutMe from "../images/aboutme_1.png"
 import DietCard from "../components/dietCard"
 import WeightGainImg from "../images/diet_icons/Weight Loss (2).png"
+import DietTable from "../images/dietTable.svg"
 
 export default function Home() {
     return (
@@ -118,58 +119,101 @@ export default function Home() {
             <section className={style.section3}>
                 <Container>
                     <Row>
-                        <Col xs={12} md={2}>
-                            <h2 className="mb-4 mb-md-5">
-                                Diet Plans
-                                <br />
-                                <span style={{ color: "#008465" }}>
-                                    We Offer
-                                </span>
-                                <br />
-                            </h2>
-                            <p>
-                                Eat without worying as our diet plans our
-                                customised to your condition
-                            </p>
-                        </Col>
-                        <Col xs={12} md={10} className="my-5 my-md-0">
-                            <div className={style.dietCardOuter}>
-                                <DietCard
-                                    heading="Weight Lost"
-                                    text="Our custom weight lost programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
-                                />
-                                <DietCard
-                                    heading="Weight Gain"
-                                    text="Our custom weight gain programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
-                                />
-                                <DietCard
-                                    heading="PCOD/PCOS"
-                                    text="Our custom weight lost programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
-                                />
-                                <DietCard
-                                    heading="Diabetes Mellitus"
-                                    text="Our custom weight lost programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
-                                />
-                                <DietCard
-                                    heading="Pregnancy / Lactation"
-                                    text="Our custom weight lost programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
-                                />
-                                <DietCard
-                                    heading="Diet For Constipation"
-                                    text="Our custom weight lost programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
-                                />
-                                <DietCard
-                                    heading="Diet for Cholestrol / Blood Pressure manangment"
-                                    text="Our custom weight lost programs can help you reach your goal fast"
-                                    icon={WeightGainImg}
+                        <Col
+                            xs={12}
+                            md={2}
+                            className={
+                                "d-flex flex-column justify-content-between"
+                            }
+                        >
+                            <div>
+                                <h2 className="mb-4 mb-md-5">
+                                    Diet Plans
+                                    <br />
+                                    <span style={{ color: "#008465" }}>
+                                        We Offer
+                                    </span>
+                                    <br />
+                                </h2>
+                                <p>
+                                    Eat without worying as our diet plans our
+                                    customised to your condition
+                                </p>
+                            </div>
+                            <div className="d-none d-md-block">
+                                <img
+                                    src={DietTable}
+                                    alt=""
+                                    style={{
+                                        position: "relative",
+                                        width: "18rem",
+                                        right: "10rem",
+                                        bottom: "2rem",
+                                    }}
                                 />
                             </div>
+                        </Col>
+                        <Col
+                            xs={12}
+                            md={10}
+                            className="my-5 my-md-0"
+                            style={{ paddingLeft: "0px", paddingRight: "0px" }}
+                        >
+                            <div className={style.dietCardOuter}>
+                                <div className={style.dietCardInner}>
+                                    <DietCard
+                                        heading="Weight Lost"
+                                        text="Our custom weight lost programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                    />
+                                    <DietCard
+                                        heading="Weight Gain"
+                                        text="Our custom weight gain programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                    />
+                                    <DietCard
+                                        heading="PCOD/PCOS"
+                                        text="Our custom weight lost programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                    />
+                                    <DietCard
+                                        heading="Diabetes Mellitus"
+                                        text="Our custom weight lost programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                        cardWidth="20rem"
+                                    />
+                                    <DietCard
+                                        heading="Pregnancy / Lactation"
+                                        text="Our custom weight lost programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                        cardWidth="22rem"
+                                    />
+                                    <DietCard
+                                        heading="Diet For Constipation"
+                                        text="Our custom weight lost programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                        cardWidth="21rem"
+                                    />
+                                    <DietCard
+                                        heading="Diet for Cholestrol / Blood Pressure manangment"
+                                        text="Our custom weight lost programs can help you reach your goal fast"
+                                        icon={WeightGainImg}
+                                        cardWidth="24rem"
+                                    />
+                                </div>
+                            </div>
+                        </Col>
+                        <Col xs={12} className={"d-block d-md-none"}>
+                            <img
+                                src={DietTable}
+                                alt=""
+                                style={{
+                                    position: "relative",
+                                    width: "18rem",
+                                    right: "10rem",
+                                    bottom: "2rem",
+                                }}
+                            />
                         </Col>
                     </Row>
                 </Container>
