@@ -11,7 +11,13 @@ import FixedToast from "../components/fixedToast"
 import DietWomen from "../images/diet_women.svg"
 import aboutMe from "../images/aboutme_1.png"
 import DietCard from "../components/dietCard"
-import WeightGainImg from "../images/diet_icons/Weight Loss (2).png"
+import WeightLossImg from "../images/diet_icons/Weight Loss.png"
+import WeightGainImg from "../images/diet_icons/weight.png"
+import Pcod from "../images/diet_icons/female.png"
+import Diabetes from "../images/diet_icons/diabetes.png"
+import Pregnancy from "../images/diet_icons/pregnant.png"
+import Constipation from "../images/diet_icons/toilet.png"
+import BloodPressure from "../images/diet_icons/blood-presure.png"
 import DietTable from "../images/dietTable.svg"
 
 export default function Home() {
@@ -50,6 +56,7 @@ export default function Home() {
                                         <Button
                                             variant="primary"
                                             className="mr-5 mr-md-3"
+                                            href="https://forms.gle/QYFJDsq6AY2jM682A"
                                         >
                                             Contact Us
                                         </Button>{" "}
@@ -162,9 +169,9 @@ export default function Home() {
                             <div className={style.dietCardOuter}>
                                 <div className={style.dietCardInner}>
                                     <DietCard
-                                        heading="Weight Lost"
+                                        heading="Weight Loss"
                                         text="Our custom weight lost programs can help you reach your goal fast"
-                                        icon={WeightGainImg}
+                                        icon={WeightLossImg}
                                     />
                                     <DietCard
                                         heading="Weight Gain"
@@ -174,30 +181,30 @@ export default function Home() {
                                     <DietCard
                                         heading="PCOD/PCOS"
                                         text="Our custom weight lost programs can help you reach your goal fast"
-                                        icon={WeightGainImg}
+                                        icon={Pcod}
                                     />
                                     <DietCard
                                         heading="Diabetes Mellitus"
                                         text="Our custom weight lost programs can help you reach your goal fast"
-                                        icon={WeightGainImg}
+                                        icon={Diabetes}
                                         cardWidth="20rem"
                                     />
                                     <DietCard
                                         heading="Pregnancy / Lactation"
                                         text="Our custom weight lost programs can help you reach your goal fast"
-                                        icon={WeightGainImg}
+                                        icon={Pregnancy}
                                         cardWidth="22rem"
                                     />
                                     <DietCard
                                         heading="Diet For Constipation"
                                         text="Our custom weight lost programs can help you reach your goal fast"
-                                        icon={WeightGainImg}
+                                        icon={Constipation}
                                         cardWidth="21rem"
                                     />
                                     <DietCard
                                         heading="Diet for Cholestrol / Blood Pressure manangment"
                                         text="Our custom weight lost programs can help you reach your goal fast"
-                                        icon={WeightGainImg}
+                                        icon={BloodPressure}
                                         cardWidth="24rem"
                                     />
                                 </div>

@@ -10,7 +10,7 @@ export default function DietCard(props) {
         >
             <Media>
                 <div className={style.icon}>
-                    <img src={props.icon} alt="" />
+                    <img src={props.icon} alt="" width="32px" />
                 </div>
                 <Media.Body>
                     <h5 className="mb-3">{props.heading}</h5>
